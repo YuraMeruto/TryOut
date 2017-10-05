@@ -37,7 +37,6 @@ namespace Nagoshi
         bool isElevetorAction;
         [SerializeField]
         Nagoshi.Elevator elevator;
-
         [SerializeField]
         EffectManager effectScript;
         [SerializeField]
@@ -51,7 +50,8 @@ namespace Nagoshi
             brige,
             gondola,
             scaffold,
-            movebox
+            movebox,
+            destoryobj
         }
         [SerializeField]
         EventStatus eventStatus = EventStatus.none;

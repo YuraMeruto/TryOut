@@ -42,8 +42,10 @@ namespace Nagoshi
                         EventObj.GetComponent<Fook>().InstanceGondola();
                         break;
                     case Nagoshi.PlayerStatus.EventStatus.movebox:
-                        Debug.Log("move");
                         EventObj.GetComponent<ParentMoveBox>().StopMoveBox();//親オブジェクトのMoveBoxアクセス
+                        break;
+                    case Nagoshi.PlayerStatus.EventStatus.destoryobj:
+                        Destroy(EventObj);
                         break;
                 }
                 isAction = false;
