@@ -51,6 +51,14 @@ public class CollisionManager : MonoBehaviour
             hp -= 20;
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
         }
+        //ギミックに衝突した時
+        else if (hitobj.tag == "Log")
+        {
+            int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
+            int damage = playerobj.GetComponent<Yamaji.Log>().GetDamage();
+            hp -= damage;
+            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
+        }
         //敵と衝突した時
         else if (hitobj.tag == "Enemy")
         {
