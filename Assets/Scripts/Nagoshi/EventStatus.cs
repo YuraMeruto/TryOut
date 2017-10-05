@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Nagoshi
 {
@@ -22,6 +23,9 @@ namespace Nagoshi
         int rate;
         [SerializeField]
         bool isAction = true;
+        [SerializeField]
+        Text textRate;
+
         public Nagoshi.PlayerStatus.EventStatus GetStatus()
         {
             return eventstats;
@@ -59,7 +63,23 @@ namespace Nagoshi
 
         public void SetRate(int set)
         {
-            rate = set;
+            if (set != 0)
+            {
+                rate = set;
+                //レート文字列変換
+                textRate.text = rate.ToString();
+                //テキスト書式設定
+                textRate.text = string.Format("{0:-000}", rate);
+            }
+            else if (set == 0)
+            {
+                textRate.text = "";
+            }
+        }
+
+        public bool GetIsAtion()
+        {
+            return isAction;
         }
     }
 }
