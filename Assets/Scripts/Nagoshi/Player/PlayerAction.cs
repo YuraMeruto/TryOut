@@ -23,10 +23,32 @@ namespace Nagoshi
         float leftValue;
         [SerializeField]
         float rightValue;
+
+        bool isEffect = false;
+        float cnt = 0.0f;
+
+        void Start()
+        {
+            
+        }
+
         void Update()
         {
-            Key();
-            Move();
+            
+            if (playerStatusScript.GetIsWalk())
+            {
+                Move();
+                
+            }
+
+            if (!isEffect)
+            {
+                Key();
+            }
+            else
+            {
+                EffectAction();
+            }
         }
 
         void Key()
@@ -112,6 +134,7 @@ namespace Nagoshi
                     case PlayerStatus.EventStatus.gondola:
                     case PlayerStatus.EventStatus.scaffold:
                     case PlayerStatus.EventStatus.movebox:
+                        isEffect = true;
                         playerStatusScript.SetMoney(sum);
                         eventobj.GetComponent<Nagoshi.EventStatus>().Action();
                        seManager.GetComponent< SEManager > ().PlaySe(1);
@@ -139,6 +162,43 @@ namespace Nagoshi
             }
             Elevator elevator = playerStatusScript.GetElevator();
             elevator.Move(value);
+        }
+
+        //金消費エフェクト処理
+        void EffectAction()
+        {
+            //各エフェクトを順に生成
+            if (isEffect)
+            {
+                playerStatusScript.SetIsWalk(false);
+
+                cnt += Time.deltaTime;
+                if (cnt >= 0.0f && cnt < 1.0f)
+                {
+                    playerStatusScript.ActionEffect();
+                    cnt = 3.5f;
+                }
+                else if (cnt >= 5.0f && cnt < 6.0f)
+                {
+                    playerStatusScript.ActionEffect();
+                    cnt = 6.0f;
+                }
+                else if (cnt >= 6.0f && cnt < 7.0f)
+                {
+                    playerStatusScript.ActionEffect();
+                    cnt = 7.0f;
+                }
+                else if (cnt >= 7.0f && cnt < 8.0f)
+                {
+                    playerStatusScript.ActionEffect();
+                    cnt = 8.0f;
+                }
+                else if (cnt >= 9.0f)
+                {
+                    isEffect = false;
+                    cnt = 0.0f;
+                }
+            }
         }
     }
 }

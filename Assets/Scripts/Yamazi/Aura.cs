@@ -26,11 +26,11 @@ namespace Yamaji
             cnt++;
             //カウントの値に応じてエフェクト拡縮
             if (cnt < 2) aura.transform.localScale = new Vector3(middle, middle, 0);
-            else if (cnt >= 2 && cnt < 6) aura.transform.localScale = new Vector3(enlargement, enlargement, 0);
-            else if (cnt >= 6 && cnt < 9) aura.transform.localScale = new Vector3(middle, middle, 0);
-            else if (cnt >= 9 && cnt < 12) aura.transform.localScale = new Vector3(reduction, reduction, 0);
-            else if (cnt >= 12 && cnt < 15) aura.transform.localScale = new Vector3(middle, middle, 0);
-            else if (cnt >= 15 && cnt < 18) aura.transform.localScale = new Vector3(enlargement, enlargement, 0);
+            else if (cnt >= 2 && cnt < 4) aura.transform.localScale = new Vector3(enlargement, enlargement, 0);
+            else if (cnt >= 4 && cnt < 6) aura.transform.localScale = new Vector3(middle, middle, 0);
+            else if (cnt >= 6 && cnt < 8) aura.transform.localScale = new Vector3(reduction, reduction, 0);
+            else if (cnt >= 8 && cnt < 10) aura.transform.localScale = new Vector3(middle, middle, 0);
+            else if (cnt >= 10 && cnt < 12) aura.transform.localScale = new Vector3(enlargement, enlargement, 0);
             //一定カウントで消滅
             else Destroy(aura);
         }    
