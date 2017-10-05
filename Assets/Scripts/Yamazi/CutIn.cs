@@ -21,8 +21,8 @@ namespace Yamaji
         {
             cnt += Time.deltaTime;
             //左上からスライドイン右下にスライドアウト後消滅
-            if (cnt < 0.22f) cutIn.transform.Translate(3.0f, -1.5f, 0.0f);
-            else if (cnt >= 0.22f && cnt < 1.2f) cutIn.transform.Translate(0.005f, -0.005f, 0.0f);
+            if (cnt < 0.17f) cutIn.transform.Translate(3.0f, -1.5f, 0.0f);
+            else if (cnt >= 0.17f && cnt < 1.2f) cutIn.transform.Translate(0.005f, -0.005f, 0.0f);
             if (cnt >= 1.2f) cutIn.transform.Translate(3.0f, -1.5f, 0.0f);
             Destroy(cutIn, 5.0f);
         }

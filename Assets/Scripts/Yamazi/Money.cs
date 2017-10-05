@@ -31,8 +31,8 @@ namespace Yamaji
             cnt += Time.deltaTime;
             money.transform.position = pos;
             //半円状位置移動後、消滅
-            pos.x = basePos.x + Mathf.Sin(cnt - 2.0f) * -speed;
-            pos.y = basePos.y + Mathf.Cos(cnt - 2.0f) * speed;
+            pos.x = basePos.x + Mathf.Sin(cnt - 1.0f) * -speed;
+            pos.y = basePos.y + Mathf.Cos(cnt - 1.0f) * speed;
             Destroy(money, 1.0f);
         }
     }
