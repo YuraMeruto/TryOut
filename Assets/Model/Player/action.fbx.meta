@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 7f04a09de8d4ba3458d77cb5a7c2a4ed
+timeCreated: 1507179621
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: model_masterma:joint1
+    100004: model_masterma:joint10
+    100006: model_masterma:joint11
+    100008: model_masterma:joint12
+    100010: model_masterma:joint16
+    100012: model_masterma:joint17
+    100014: model_masterma:joint18
+    100016: model_masterma:joint19
+    100018: model_masterma:joint2
+    100020: model_masterma:joint20
+    100022: model_masterma:joint21
+    100024: model_masterma:joint22
+    100026: model_masterma:joint23
+    100028: model_masterma:joint24
+    100030: model_masterma:joint25
+    100032: model_masterma:joint26
+    100034: model_masterma:joint27
+    100036: model_masterma:joint3
+    100038: model_masterma:joint30
+    100040: model_masterma:joint31
+    100042: model_masterma:joint32
+    100044: model_masterma:joint34
+    100046: model_masterma:joint35
+    100048: model_masterma:joint36
+    100050: model_masterma:joint38
+    100052: model_masterma:joint39
+    100054: model_masterma:joint4
+    100056: model_masterma:joint40
+    100058: model_masterma:joint41
+    100060: model_masterma:joint42
+    100062: model_masterma:joint43
+    100064: model_masterma:joint44
+    100066: model_masterma:joint45
+    100068: model_masterma:joint46
+    100070: model_masterma:joint47
+    100072: model_masterma:joint48
+    100074: model_masterma:joint49
+    100076: model_masterma:joint5
+    100078: model_masterma:joint50
+    100080: model_masterma:joint51
+    100082: model_masterma:joint52
+    100084: model_masterma:joint53
+    100086: model_masterma:joint54
+    100088: model_masterma:joint55
+    100090: model_masterma:joint56
+    100092: model_masterma:joint57
+    100094: model_masterma:joint58
+    100096: model_masterma:joint6
+    100098: model_masterma:joint7
+    100100: model_masterma:joint8
+    100102: model_masterma:joint9
+    100104: model_masterma:nurbsCircle25
+    100106: model_masterma:polySurface85
+    400000: //RootNode
+    400002: model_masterma:joint1
+    400004: model_masterma:joint10
+    400006: model_masterma:joint11
+    400008: model_masterma:joint12
+    400010: model_masterma:joint16
+    400012: model_masterma:joint17
+    400014: model_masterma:joint18
+    400016: model_masterma:joint19
+    400018: model_masterma:joint2
+    400020: model_masterma:joint20
+    400022: model_masterma:joint21
+    400024: model_masterma:joint22
+    400026: model_masterma:joint23
+    400028: model_masterma:joint24
+    400030: model_masterma:joint25
+    400032: model_masterma:joint26
+    400034: model_masterma:joint27
+    400036: model_masterma:joint3
+    400038: model_masterma:joint30
+    400040: model_masterma:joint31
+    400042: model_masterma:joint32
+    400044: model_masterma:joint34
+    400046: model_masterma:joint35
+    400048: model_masterma:joint36
+    400050: model_masterma:joint38
+    400052: model_masterma:joint39
+    400054: model_masterma:joint4
+    400056: model_masterma:joint40
+    400058: model_masterma:joint41
+    400060: model_masterma:joint42
+    400062: model_masterma:joint43
+    400064: model_masterma:joint44
+    400066: model_masterma:joint45
+    400068: model_masterma:joint46
+    400070: model_masterma:joint47
+    400072: model_masterma:joint48
+    400074: model_masterma:joint49
+    400076: model_masterma:joint5
+    400078: model_masterma:joint50
+    400080: model_masterma:joint51
+    400082: model_masterma:joint52
+    400084: model_masterma:joint53
+    400086: model_masterma:joint54
+    400088: model_masterma:joint55
+    400090: model_masterma:joint56
+    400092: model_masterma:joint57
+    400094: model_masterma:joint58
+    400096: model_masterma:joint6
+    400098: model_masterma:joint7
+    400100: model_masterma:joint8
+    400102: model_masterma:joint9
+    400104: model_masterma:nurbsCircle25
+    400106: model_masterma:polySurface85
+    4300000: model_masterma:polySurface85
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: model_masterma:polySurface85
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
