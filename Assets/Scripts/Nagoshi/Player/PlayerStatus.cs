@@ -37,6 +37,14 @@ namespace Nagoshi
         bool isElevetorAction;
         [SerializeField]
         Nagoshi.Elevator elevator;
+
+        [SerializeField]
+        EffectManager effectScript;
+        [SerializeField]
+        GameObject player;
+        Vector3 pos;
+        int idx = 0;
+
         public enum EventStatus
         {
             none,
@@ -47,6 +55,12 @@ namespace Nagoshi
         }
         [SerializeField]
         EventStatus eventStatus = EventStatus.none;
+
+        void Update()
+        {
+            //プレイヤー位置取得
+            pos = player.transform.position;
+        }
 
         public int GetHp()
         {
@@ -184,6 +198,32 @@ namespace Nagoshi
         public Elevator GetElevator()
         {
             return elevator;
+        }
+
+        public void ActionEffect()
+        {
+            //各エフェクト生成
+            switch (idx)
+            {
+                case 0:
+                    effectScript.InstanceEffect(0, pos + new Vector3(-30.0f, 15.0f, -2.5f));
+                    idx++;
+                    break;
+                case 1:
+                    effectScript.InstanceEffect(1, pos + new Vector3(0.0f, 0.3f, 0.0f));
+                    idx++;
+                    break;
+                case 2:
+                    effectScript.InstanceEffect(2, pos + new Vector3(0.5f, 1.0f, -0.5f));
+                    idx++;
+                    break;
+                case 3:
+                    effectScript.InstanceEffect(3, pos + new Vector3(-1.0f, -0.1f, 0.0f));
+                    idx = 0;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
