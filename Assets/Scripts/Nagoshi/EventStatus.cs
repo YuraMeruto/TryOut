@@ -31,11 +31,6 @@ namespace Nagoshi
             return eventstats;
         }
 
-        void Start()
-        {
-            
-        }
-
         //プレイやーがアクションボタンを押したときに処理される
         public void Action()
         {
@@ -80,6 +75,11 @@ namespace Nagoshi
             {
                 textRate.text = "";
             }
+        }
+
+        public bool GetIsAtion()
+        {
+            return isAction;
         }
     }
 }

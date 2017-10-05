@@ -29,16 +29,16 @@ namespace Nagoshi
 
         void Start()
         {
-            
+
         }
 
         void Update()
         {
-            
+
             if (playerStatusScript.GetIsWalk())
             {
                 Move();
-                
+
             }
 
             if (!isEffect)
@@ -73,16 +73,16 @@ namespace Nagoshi
                 Walk(false, 0);
             }
 
-            if(Input.GetAxis("Vertical") != 0.0f)
+            if (Input.GetAxis("Vertical") != 0.0f)
             {
                 ElevatorAction();
             }
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick2Button1)　|| Input.GetKeyDown(KeyCode.Joystick1Button1))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick2Button1) || Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
                 Event();
             }
 
-            if(Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Joystick2Button0))
+            if (Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Joystick2Button0))
             {
                 Jump();
             }
@@ -124,39 +124,43 @@ namespace Nagoshi
                 int money = playerStatusScript.GetMoney();
                 int rate = eventobj.GetComponent<Nagoshi.EventStatus>().GetRate();
                 int sum = money - rate;
-                if(sum <= 0)
+                if (sum <= 0)
                 {
                     return;
                 }
-                switch (result)
+                bool action = eventobj.GetComponent<Nagoshi.EventStatus>().GetIsAtion();
+                if (action)
                 {
-                    case PlayerStatus.EventStatus.brige:
-                    case PlayerStatus.EventStatus.gondola:
-                    case PlayerStatus.EventStatus.scaffold:
-                    case PlayerStatus.EventStatus.movebox:
-                        isEffect = true;
-                        playerStatusScript.SetMoney(sum);
-                        eventobj.GetComponent<Nagoshi.EventStatus>().Action();
-                       seManager.GetComponent< SEManager > ().PlaySe(1);
-                        break;
+                    switch (result)
+                    {
+                        case PlayerStatus.EventStatus.brige:
+                        case PlayerStatus.EventStatus.gondola:
+                        case PlayerStatus.EventStatus.scaffold:
+                        case PlayerStatus.EventStatus.movebox:
+                            isEffect = true;
+                            playerStatusScript.SetMoney(sum);
+                            eventobj.GetComponent<Nagoshi.EventStatus>().Action();
+                            seManager.GetComponent<SEManager>().PlaySe(1);
+                            break;
+                    }
                 }
             }
         }
 
         void Jump()
         {
-            if(playerStatusScript.GetIsJump())
+            if (playerStatusScript.GetIsJump())
             {
                 playerStatusScript.SetIsJump(false);
                 GetComponent<Rigidbody>().AddForce(Vector3.up * playerStatusScript.GetJumpForce());
-               seManager.GetComponent<SEManager>().PlaySe(4);
+                seManager.GetComponent<SEManager>().PlaySe(4);
             }
         }
 
         void ElevatorAction()
         {
             float value = Input.GetAxis("Vertical");
-            if(!playerStatusScript.GetIsElevetorAction())
+            if (!playerStatusScript.GetIsElevetorAction())
             {
                 return;
             }
