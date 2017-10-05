@@ -35,7 +35,8 @@ public class stone : MonoBehaviour
         {
             stonePos.x = createPos.x + width;
             PosUpdate();
-            Instantiate(stonecube, stonePos, Quaternion.identity);
+            GameObject obj = Instantiate(stonecube, stonePos, Quaternion.identity);
+            Destroy(obj, 2.5f);
             cnt1 = 0; new Vector3(-40.0f, 2.0f, 0.0f);
         }
 
@@ -43,7 +44,8 @@ public class stone : MonoBehaviour
         {
             stonePos.x = createPos.x - width;
             PosUpdate();
-            Instantiate(stonecube, stonePos, Quaternion.identity);
+            GameObject obj = Instantiate(stonecube, stonePos, Quaternion.identity);
+            Destroy(obj, 2.5f);
             cnt2 = 0;
 
         }
@@ -51,9 +53,12 @@ public class stone : MonoBehaviour
         {
             stonePos.x = createPos.x;
             PosUpdate();
-            Instantiate(stonecube, stonePos, Quaternion.identity);
+            GameObject obj = Instantiate(stonecube, stonePos, Quaternion.identity);
+            Destroy(obj, 2.5f);
             cnt3 = 0;
         }
+
+        
     }
 
     void PosUpdate()

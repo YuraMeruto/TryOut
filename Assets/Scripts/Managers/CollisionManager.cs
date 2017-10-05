@@ -29,6 +29,8 @@ public class CollisionManager : MonoBehaviour
         if (hitobj.tag == "Event")
         {
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetEventObj(hitobj);
+            int rate = hitobj.GetComponent<Nagoshi.EventStatus>().GetRate();
+            hitobj.GetComponent<Nagoshi.EventStatus>().SetRate(rate);
             GameObject obj = InstanceScript.InstanceObjects(0, hitobj.transform.position + Vector3.up * 2);
             Destroy(obj, 3.0f);
         }
@@ -117,6 +119,11 @@ public class CollisionManager : MonoBehaviour
         if (exitobj.gameObject.tag == "Fook")
         {
             playerobj.transform.parent = null;
+        }
+
+        else if(exitobj.tag == "Event")
+        {
+            exitobj.GetComponent<Nagoshi.EventStatus>().SetRate(0);
         }
     }
 

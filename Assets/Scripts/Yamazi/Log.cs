@@ -37,7 +37,7 @@ namespace Yamaji
             //経過時間取得
             time = Time.time;
             Move();
-
+            log.transform.Rotate(10.0f, 0.0f, 0.0f);
         }
 
         void Move()
