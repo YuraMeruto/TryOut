@@ -15,8 +15,8 @@ namespace Nagoshi
         [SerializeField]
         Nagoshi.PlayerStatus playerStatusScript;
         Animation anim;
+        [SerializeField]
         Animator animControl;
-
         void Start()
         {
             anim = GetComponent<Animation>();
@@ -28,7 +28,19 @@ namespace Nagoshi
         /// </summary>
         public void SetIsWalk()
         {
-            //animControl.SetBool("isWalk", playerStatusScript.GetIsWalk());
+            animControl.SetBool("isWalk", playerStatusScript.GetIsWalk());
+        }
+
+        public void SetIsJump()
+        {
+            bool isAction = !playerStatusScript.GetIsJump();
+            animControl.SetBool("isJump", isAction);
+        }
+
+        public void SetIsAction()
+        {
+            Debug.Log("hoge");
+            animControl.SetBool("isAction", playerStatusScript.GetIsAction());
         }
     }
 }
