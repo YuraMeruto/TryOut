@@ -32,13 +32,14 @@ public class CollisionManager : MonoBehaviour
             GameObject obj = InstanceScript.InstanceObjects(0, hitobj.transform.position + Vector3.up * 2);
             Destroy(obj, 3.0f);
         }
+
         //宝に衝突した時
         else if (hitobj.tag == "Tresure")
         {
             int money = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetMoney();
-            money += 500;
+            int tresuremoney = hitobj.GetComponent<Nagoshi.Tresure>().GetMoney();
+            money += tresuremoney;
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetMoney(money);
-            Debug.Log(money);
             Destroy(hitobj);
             GetComponent<SEManager>().PlaySe(3);
 
@@ -54,7 +55,8 @@ public class CollisionManager : MonoBehaviour
         else if (hitobj.tag == "Enemy")
         {
             int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
-            hp -= 30;
+            int damage = playerobj.GetComponent<Nagoshi.Enemy>().GetDamage();
+            hp -= damage;
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
             Destroy(hitobj);
         }
@@ -76,6 +78,17 @@ public class CollisionManager : MonoBehaviour
         else if (hitobj.tag == "Ground")
         {
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsJump(true);
+        }
+
+        else if(hitobj.tag == "Stone")
+        {
+            int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
+            if (cnt > 1.0f)
+            {
+                int damage = hitobj.GetComponent<StoneDestroy>().GetDamage();
+                hp -= damage;
+            }
+            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
         }
 
         //ゴンドラと接した時
