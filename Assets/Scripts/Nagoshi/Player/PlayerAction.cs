@@ -137,7 +137,7 @@ namespace Nagoshi
                         isEffect = true;
                         playerStatusScript.SetMoney(sum);
                         eventobj.GetComponent<Nagoshi.EventStatus>().Action();
-                        GetComponent< SEManager > ().PlaySe(1);
+                       seManager.GetComponent< SEManager > ().PlaySe(1);
                         break;
                 }
             }

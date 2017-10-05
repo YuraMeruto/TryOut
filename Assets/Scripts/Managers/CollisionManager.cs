@@ -32,11 +32,6 @@ public class CollisionManager : MonoBehaviour
             GameObject obj = InstanceScript.InstanceObjects(0, hitobj.transform.position + Vector3.up * 2);
             Destroy(obj, 3.0f);
         }
-        //ゴールオブジェクトに衝突した時
-        else if (hitobj.tag == "Goal")
-        {
-            SceneManager.LoadScene("ResultScene");
-        }
         //宝に衝突した時
         else if (hitobj.tag == "Tresure")
         {
@@ -72,7 +67,7 @@ public class CollisionManager : MonoBehaviour
             int money = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetMoney();
             int sum = hp * money;
             //スコアの合計の計算終了
-            string data = sum.ToString();
+            string data = money.ToString() + "/" + hp.ToString() + "/" + sum.ToString();
             scoreWriteScript.WirteScore(data);
             SceneManager.LoadScene("ResultScene");
         }
@@ -86,15 +81,10 @@ public class CollisionManager : MonoBehaviour
         //ゴンドラと接した時
         else if (hitobj.tag == "Gondola")
         {
-            Vector3 copyscale = playerobj.transform.localScale;
-            playerobj.transform.parent = hitobj.transform;
-            playerobj.transform.localScale = copyscale;
-            GetComponent<SEManager>().PlaySe(2);
-        }
-        else if (hitobj.tag == "Elevator")
-        {
-            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsElevetorAction(true);
-            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetElevator(hitobj.GetComponent<Nagoshi.Elevator>());
+            //Vector3 copyscale = playerobj.transform.localScale;
+            //playerobj.transform.parent = hitobj.transform;
+            //playerobj.transform.localScale = copyscale;
+            //GetComponent<SEManager>().PlaySe(2);
         }
     }
 
@@ -107,12 +97,6 @@ public class CollisionManager : MonoBehaviour
         {
             playerobj.transform.parent = null;
         }
-
-        else if (exitobj.gameObject.tag == "Elevator")
-        {
-            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsElevetorAction(false);
-        }
-
     }
 
     /// <summary>
@@ -129,6 +113,7 @@ public class CollisionManager : MonoBehaviour
         {
             playerobj.transform.parent = hitobj.transform;
         }
+
     }
 
     /// <summary>
@@ -136,10 +121,11 @@ public class CollisionManager : MonoBehaviour
     /// </summary>
     public void ExitCollsion(GameObject playerobj, GameObject exitobj)
     {
-        if (exitobj.tag == "Gondola")
+        if (exitobj.gameObject.tag == "Fook")
         {
             playerobj.transform.parent = null;
         }
+
     }
     public void StayCollision(GameObject playerobj, GameObject stayObj)
     {
