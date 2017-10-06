@@ -24,5 +24,17 @@ namespace Nagoshi
         {
             return damage;
         }
+
+        void OnCollisionEnter(Collision col)
+        {
+            if(col.gameObject.tag == "Player")
+            {
+                col.gameObject.GetComponent<Nagoshi.PlayerAnimation>().SetIsDamage();
+                int hp = col.gameObject.GetComponent<Nagoshi.PlayerStatus>().GetHp();
+                int damage = GetComponent<Nagoshi.Enemy>().GetDamage();
+                hp -= damage;
+                col.gameObject.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
+            }
+        }
     }
 }

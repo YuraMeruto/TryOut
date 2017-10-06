@@ -60,16 +60,6 @@ public class CollisionManager : MonoBehaviour
             hp -= damage;
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
         }
-        //敵と衝突した時
-        else if (hitobj.tag == "Enemy")
-        {
-            playerobj.GetComponent<Nagoshi.PlayerAnimation>().SetIsDamage();
-            int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
-            int damage = playerobj.GetComponent<Nagoshi.Enemy>().GetDamage();
-            hp -= damage;
-            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
-            Destroy(hitobj);
-        }
 
         //ゴールオブジェクトに衝突した時
         else if (hitobj.tag == "Goal")
