@@ -44,7 +44,6 @@ public class CollisionManager : MonoBehaviour
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetMoney(money);
             Destroy(hitobj);
             GetComponent<SEManager>().PlaySe(3);
-
         }
         //ギミックに衝突した時
         else if (hitobj.tag == "Gimmick")
@@ -64,6 +63,7 @@ public class CollisionManager : MonoBehaviour
         //敵と衝突した時
         else if (hitobj.tag == "Enemy")
         {
+            playerobj.GetComponent<Nagoshi.PlayerAnimation>().SetIsDamage();
             int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
             int damage = playerobj.GetComponent<Nagoshi.Enemy>().GetDamage();
             hp -= damage;
@@ -90,24 +90,14 @@ public class CollisionManager : MonoBehaviour
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsJump(true);
         }
 
-        else if(hitobj.tag == "Stone")
+        //落石と接した時
+        else if (hitobj.tag == "Stone")
         {
+            playerobj.GetComponent<Nagoshi.PlayerAnimation>().SetIsDamage();
             int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
-            if (cnt > 1.0f)
-            {
-                int damage = hitobj.GetComponent<StoneDestroy>().GetDamage();
-                hp -= damage;
-            }
+            int damage = hitobj.GetComponent<StoneDestroy>().GetDamage();
+            hp -= damage;
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetHp(hp);
-        }
-
-        //ゴンドラと接した時
-        else if (hitobj.tag == "Gondola")
-        {
-            //Vector3 copyscale = playerobj.transform.localScale;
-            //playerobj.transform.parent = hitobj.transform;
-            //playerobj.transform.localScale = copyscale;
-            //GetComponent<SEManager>().PlaySe(2);
         }
     }
 
@@ -121,9 +111,10 @@ public class CollisionManager : MonoBehaviour
             playerobj.transform.parent = null;
         }
 
-        else if(exitobj.tag == "Event")
+        else if (exitobj.tag == "Event")
         {
             exitobj.GetComponent<Nagoshi.EventStatus>().SetRate(0);
+            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetEventStatus(Nagoshi.PlayerStatus.EventStatus.none);
         }
     }
 
@@ -132,11 +123,12 @@ public class CollisionManager : MonoBehaviour
     /// </summary>
     public void HitCollision(GameObject playerobj, GameObject hitobj)
     {
+        //地面と接触したら
         if (hitobj.gameObject.tag == "Ground")
         {
             playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsJump(true);
         }
-
+        //フックと接触したら
         else if (hitobj.gameObject.tag == "Fook")
         {
             playerobj.transform.parent = hitobj.transform;
@@ -164,6 +156,7 @@ public class CollisionManager : MonoBehaviour
             int hp = playerobj.GetComponent<Nagoshi.PlayerStatus>().GetHp();
             if (cnt > 1.0f)
             {
+                playerobj.GetComponent<Nagoshi.PlayerAnimation>().SetIsDamage();
                 hp -= 5;
                 cnt = 0.0f;
             }
