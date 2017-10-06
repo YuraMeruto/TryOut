@@ -87,7 +87,6 @@ public class CollisionManager : MonoBehaviour
         //地面と接した時
         else if (hitobj.tag == "Ground")
         {
-            playerobj.GetComponent<Nagoshi.PlayerStatus>().SetIsJump(true);
         }
 
         //落石と接した時

@@ -19,5 +19,13 @@ namespace Nagoshi
         {
             fookObj.SetDirection();
         }
+
+        void OnCollisionEnter(Collision col)
+        {
+            if(col.gameObject.tag == "Player")
+            {
+                col.gameObject.GetComponent<Nagoshi.PlayerStatus>().SetIsJump(true);
+            }
+        }
     }
 }
