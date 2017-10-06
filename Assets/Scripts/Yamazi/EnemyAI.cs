@@ -18,8 +18,6 @@ namespace Yamaji
         Vector3 pos;
         //移動速度
         float moveSpeed = 2.0f;
-        //回転速度
-        float angleSpeed = 0.1f;
         //半径(8の字移動の大きさ)
         float radius = 4.5f;
 
@@ -31,14 +29,7 @@ namespace Yamaji
 
         void Update()
         {
-            RotateAxis();
             MovePos();
-        }
-
-        //回転処理
-        void RotateAxis()
-        {
-            transform.Rotate(0, angleSpeed, 0);
         }
 
         //自身位置を基準に移動処理
