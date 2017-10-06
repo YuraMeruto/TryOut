@@ -29,16 +29,16 @@ namespace Nagoshi
 
         void Start()
         {
-
+            
         }
 
         void Update()
         {
-
+            
             if (playerStatusScript.GetIsWalk())
             {
                 Move();
-
+                
             }
 
             if (!isEffect)
@@ -73,16 +73,16 @@ namespace Nagoshi
                 Walk(false, 0);
             }
 
-            if (Input.GetAxis("Vertical") != 0.0f)
+            if(Input.GetAxis("Vertical") != 0.0f)
             {
                 ElevatorAction();
             }
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick2Button1) || Input.GetKeyDown(KeyCode.Joystick1Button1))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick2Button1)　|| Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
                 Event();
             }
 
-            if (Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Joystick2Button0))
+            if(Input.GetKeyDown(KeyCode.Joystick1Button0) || Input.GetKeyDown(KeyCode.Joystick2Button0))
             {
                 Jump();
             }
@@ -101,7 +101,7 @@ namespace Nagoshi
             moveValue = value;
             if (value != 0)
             {
-                pos.z = moveValue;
+                pos.z = pos.z * value;
                 transform.localScale = pos;
             }
         }
@@ -139,6 +139,8 @@ namespace Nagoshi
                         case PlayerStatus.EventStatus.movebox:
                             isEffect = true;
                             playerStatusScript.SetMoney(sum);
+                            playerStatusScript.SetIsAction(true);
+                            playerAnimationScript.SetIsAction();
                             eventobj.GetComponent<Nagoshi.EventStatus>().Action();
                             seManager.GetComponent<SEManager>().PlaySe(1);
                             break;
@@ -146,21 +148,21 @@ namespace Nagoshi
                 }
             }
         }
-
         void Jump()
         {
-            if (playerStatusScript.GetIsJump())
+            if(playerStatusScript.GetIsJump())
             {
                 playerStatusScript.SetIsJump(false);
+                playerAnimationScript.SetIsJump(true);
                 GetComponent<Rigidbody>().AddForce(Vector3.up * playerStatusScript.GetJumpForce());
-                seManager.GetComponent<SEManager>().PlaySe(4);
+               seManager.GetComponent<SEManager>().PlaySe(4);
             }
         }
 
         void ElevatorAction()
         {
             float value = Input.GetAxis("Vertical");
-            if (!playerStatusScript.GetIsElevetorAction())
+            if(!playerStatusScript.GetIsElevetorAction())
             {
                 return;
             }
@@ -200,6 +202,8 @@ namespace Nagoshi
                 else if (cnt >= 9.0f)
                 {
                     isEffect = false;
+                    playerStatusScript.SetIsAction(false);
+                    playerAnimationScript.SetIsAction();
                     cnt = 0.0f;
                 }
             }

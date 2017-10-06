@@ -18,7 +18,7 @@ namespace Nagoshi
         int speed;
         bool isWalk = false;
         bool isTest = false;
-        [SerializeField]
+        bool isAction = false;
         bool isJump = true;
         [SerializeField]
         int money;
@@ -224,6 +224,16 @@ namespace Nagoshi
                 default:
                     break;
             }
+        }
+
+        public void SetIsAction(bool set)
+        {
+            isAction = set;
+        }
+
+        public bool GetIsAction()
+        {
+            return isAction;
         }
     }
 }

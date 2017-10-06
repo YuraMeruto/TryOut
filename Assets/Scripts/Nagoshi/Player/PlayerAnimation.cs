@@ -31,16 +31,19 @@ namespace Nagoshi
             animControl.SetBool("isWalk", playerStatusScript.GetIsWalk());
         }
 
-        public void SetIsJump()
+        public void SetIsJump(bool set)
         {
-            bool isAction = !playerStatusScript.GetIsJump();
-            animControl.SetBool("isJump", isAction);
+            animControl.SetBool("isJump", set);
         }
 
         public void SetIsAction()
         {
-            Debug.Log("hoge");
             animControl.SetBool("isAction", playerStatusScript.GetIsAction());
+        }
+
+        public void SetIsDamage()
+        {
+            animControl.Play("Damage");
         }
     }
 }

@@ -355,7 +355,347 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: model_masterma:bottom
+        weight: 1
+      - path: model_masterma:group
+        weight: 1
+      - path: model_masterma:group/model_masterma:pasted__polySurface75
+        weight: 1
+      - path: model_masterma:group/model_masterma:pasted__polySurface75/model_masterma:pasted__transform69
+        weight: 1
+      - path: model_masterma:joint22_offset
+        weight: 1
+      - path: model_masterma:joint23_offset
+        weight: 1
+      - path: model_masterma:joint23_offset/model_masterma:joint23_CTRL
+        weight: 1
+      - path: model_masterma:joint24_offset
+        weight: 1
+      - path: model_masterma:joint24_offset/model_masterma:joint24_CTRL
+        weight: 1
+      - path: model_masterma:joint25_offset
+        weight: 1
+      - path: model_masterma:joint26_offset
+        weight: 1
+      - path: model_masterma:joint26_offset/model_masterma:joint26_CTRL
+        weight: 1
+      - path: model_masterma:joint27_offset
+        weight: 1
+      - path: model_masterma:joint27_offset/model_masterma:joint27_CTRL
+        weight: 1
+      - path: model_masterma:joint30_offset
+        weight: 1
+      - path: model_masterma:joint31_offset
+        weight: 1
+      - path: model_masterma:joint31_offset/model_masterma:joint31_CTRL
+        weight: 1
+      - path: model_masterma:joint32_offset
+        weight: 1
+      - path: model_masterma:joint32_offset/model_masterma:joint32_CTRL
+        weight: 1
+      - path: model_masterma:joint34_offset
+        weight: 1
+      - path: model_masterma:joint35_offset
+        weight: 1
+      - path: model_masterma:joint35_offset/model_masterma:joint35_CTRL
+        weight: 1
+      - path: model_masterma:joint36_offset
+        weight: 1
+      - path: model_masterma:joint36_offset/model_masterma:joint36_CTRL
+        weight: 1
+      - path: model_masterma:joint38_offset
+        weight: 1
+      - path: model_masterma:joint39_offset
+        weight: 1
+      - path: model_masterma:joint39_offset/model_masterma:joint39_CTRL
+        weight: 1
+      - path: model_masterma:joint40_offset
+        weight: 1
+      - path: model_masterma:joint40_offset/model_masterma:joint40_CTRL
+        weight: 1
+      - path: model_masterma:joint44_offset
+        weight: 1
+      - path: model_masterma:joint45_offset
+        weight: 1
+      - path: model_masterma:joint45_offset/model_masterma:joint45_CTRL
+        weight: 1
+      - path: model_masterma:joint46_offset
+        weight: 1
+      - path: model_masterma:joint46_offset/model_masterma:joint46_CTRL
+        weight: 1
+      - path: model_masterma:joint47_offset
+        weight: 1
+      - path: model_masterma:joint48_offset
+        weight: 1
+      - path: model_masterma:joint48_offset/model_masterma:joint48_CTRL
+        weight: 1
+      - path: model_masterma:joint49_offset
+        weight: 1
+      - path: model_masterma:joint49_offset/model_masterma:joint49_CTRL
+        weight: 1
+      - path: model_masterma:joint50_offset
+        weight: 1
+      - path: model_masterma:joint51_offset
+        weight: 1
+      - path: model_masterma:joint51_offset/model_masterma:joint51_CTRL
+        weight: 1
+      - path: model_masterma:joint52_offset
+        weight: 1
+      - path: model_masterma:joint52_offset/model_masterma:joint52_CTRL
+        weight: 1
+      - path: model_masterma:joint53_offset
+        weight: 1
+      - path: model_masterma:joint54_offset
+        weight: 1
+      - path: model_masterma:joint54_offset/model_masterma:joint54_CTRL
+        weight: 1
+      - path: model_masterma:joint55_offset
+        weight: 1
+      - path: model_masterma:joint55_offset/model_masterma:joint55_CTRL
+        weight: 1
+      - path: model_masterma:joint56_offset
+        weight: 1
+      - path: model_masterma:joint57_offset
+        weight: 1
+      - path: model_masterma:joint57_offset/model_masterma:joint57_CTRL
+        weight: 1
+      - path: model_masterma:joint58_offset
+        weight: 1
+      - path: model_masterma:joint58_offset/model_masterma:joint58_CTRL
+        weight: 1
+      - path: model_masterma:left
+        weight: 1
+      - path: model_masterma:nurbsCircle25
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint3
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint3/model_masterma:joint5
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint3/model_masterma:joint5/model_masterma:joint6
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint3/model_masterma:joint5/model_masterma:joint6/model_masterma:joint7
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint3/model_masterma:joint5/model_masterma:joint6/model_masterma:joint7/model_masterma:joint8
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint16
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint16/model_masterma:joint17
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint16/model_masterma:joint17/model_masterma:joint18
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint16/model_masterma:joint17/model_masterma:joint18/model_masterma:joint19
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint12/model_masterma:joint16/model_masterma:joint17/model_masterma:joint18/model_masterma:joint19/model_masterma:joint20
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint4
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint22
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint22/model_masterma:joint23
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint22/model_masterma:joint23/model_masterma:joint24
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint25
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint25/model_masterma:joint26
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint25/model_masterma:joint26/model_masterma:joint27
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint30
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint30/model_masterma:joint31
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint30/model_masterma:joint31/model_masterma:joint32
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint34
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint34/model_masterma:joint35
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint34/model_masterma:joint35/model_masterma:joint36
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint38
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint38/model_masterma:joint39
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint9/model_masterma:joint10/model_masterma:joint11/model_masterma:joint38/model_masterma:joint39/model_masterma:joint40
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint44
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint44/model_masterma:joint45
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint44/model_masterma:joint45/model_masterma:joint46
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint47
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint47/model_masterma:joint48
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint47/model_masterma:joint48/model_masterma:joint49
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint50
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint50/model_masterma:joint51
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint50/model_masterma:joint51/model_masterma:joint52
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint53
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint53/model_masterma:joint54
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint53/model_masterma:joint54/model_masterma:joint55
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint56
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint56/model_masterma:joint57
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:joint2/model_masterma:joint21/model_masterma:joint1/model_masterma:joint41/model_masterma:joint42/model_masterma:joint43/model_masterma:joint56/model_masterma:joint57/model_masterma:joint58
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:joint22_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:joint25_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:joint30_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:joint34_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:joint38_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle4/model_masterma:nurbsCircle5/model_masterma:nurbsCircle6/model_masterma:satu_pCube2
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle7
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group3
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group3/model_masterma:joint56_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group4
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group4/model_masterma:joint53_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group5
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group5/model_masterma:joint50_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group6
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group6/model_masterma:joint47_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group7
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:group7/model_masterma:joint44_CTRL
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle2/model_masterma:nurbsCircle3/model_masterma:nurbsCircle14/model_masterma:nurbsCircle15/model_masterma:nurbsCircle16/model_masterma:satu_pCube1
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle1/model_masterma:nurbsCircle22
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10/model_masterma:ikHandle5
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10/model_masterma:nurbsCircle11
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10/model_masterma:nurbsCircle11/model_masterma:ikHandle6
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10/model_masterma:nurbsCircle11/model_masterma:nurbsCircle9
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle13/model_masterma:nurbsCircle10/model_masterma:nurbsCircle11/model_masterma:nurbsCircle9/model_masterma:ikHandle1
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19/model_masterma:ikHandle7
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19/model_masterma:nurbsCircle21
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19/model_masterma:nurbsCircle21/model_masterma:ikHandle8
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19/model_masterma:nurbsCircle21/model_masterma:nurbsCircle18
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle20/model_masterma:nurbsCircle19/model_masterma:nurbsCircle21/model_masterma:nurbsCircle18/model_masterma:ikHandle2
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle23
+        weight: 1
+      - path: model_masterma:nurbsCircle25/model_masterma:nurbsCircle24
+        weight: 1
+      - path: model_masterma:polySurface62
+        weight: 1
+      - path: model_masterma:polySurface62/model_masterma:polySurface63
+        weight: 1
+      - path: model_masterma:polySurface62/model_masterma:polySurface65
+        weight: 1
+      - path: model_masterma:polySurface85
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

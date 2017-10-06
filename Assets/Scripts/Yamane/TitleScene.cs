@@ -22,7 +22,6 @@ public class TitleScene : MonoBehaviour
         {
             //Debug.Log("Start");
             //ゲームシーンへ移行
-            SceneManager.LoadScene("nago");
         }
     }
 }
